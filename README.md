@@ -4,9 +4,8 @@ Originally built by [Kenji Abe (STAR-ZERO)][kenji]
 
 [kenji]:https://github.com/STAR-ZERO
 
-Support multiple lines ellipsis
+Multiple-line interactive truncation.
 
-[http://plugins.jquery.com/ellipsis/](http://plugins.jquery.com/ellipsis/)
 
 ## Usage
 
