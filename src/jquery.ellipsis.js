@@ -11,13 +11,13 @@
 
         this.each(function() {
             // 原典のデータバインド
-	    if (!$(this).attr('data-ellipsis')) {$(this).attr('data-ellipsis', $(this).text());}
+            if (!$(this).attr('data-ellipsis')) {$(this).attr('data-ellipsis', $(this).text());}
 
             // 現在のテキストを取得
             var $this = $(this);
             var data_ellipsis = $(this).attr('data-ellipsis');
 
-	    $this.text(data_ellipsis);
+            $this.text(data_ellipsis);
             var origHeight = $this.height();
             var text = $this.text();
 
