@@ -1,4 +1,4 @@
-# jQuery ellipsis [![Build Status](https://travis-ci.org/aaronhamilton/jquery-ellipsis.png?branch=master)](https://travis-ci.org/aaronhamilton/jquery-ellipsis)
+# jQuery ellipsis [![Build Status](https://travis-ci.org/aaronhamilton/jquery-ellipsis-interactive.png?branch=master)](https://travis-ci.org/aaronhamilton/jquery-ellipsis-interactive)
 
 Originally built by [Kenji Abe (STAR-ZERO)][kenji]
 
@@ -36,5 +36,5 @@ $('#target').ellipsis({
 Whenever you want to reflow the element, just call it the same way, and it'll restore its old text, if you change the text, remember to change the data-ellipsis attribute as well.
 
 ## License
-jquery-ellipsis is available under the terms of the [MIT License](https://github.com/aaronhamilton/jquery-ellipsis/blob/master/LICENSE-MIT).
+jquery-ellipsis-interactive is available under the terms of the [MIT License](https://github.com/aaronhamilton/jquery-ellipsis-interactive/blob/master/LICENSE-MIT).
 
