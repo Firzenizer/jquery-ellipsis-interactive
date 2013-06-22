@@ -4,7 +4,7 @@
         // デフォルトオプション
         var defaults = {
             'row' : 1, // 省略行数
-            'char' : '...' // 省略文字
+            'char' : '…' // 省略文字
         };
 
         options = $.extend(defaults, options);
