@@ -1,5 +1,9 @@
 # jQuery ellipsis [![Build Status](https://travis-ci.org/aaronhamilton/jquery-ellipsis.png?branch=master)](https://travis-ci.org/aaronhamilton/jquery-ellipsis)
 
+Originally built by [Kenji Abe (STAR-ZERO)][kenji]
+
+[kenji][https://github.com/STAR-ZERO]
+
 Support multiple lines ellipsis
 
 [http://plugins.jquery.com/ellipsis/](http://plugins.jquery.com/ellipsis/)
