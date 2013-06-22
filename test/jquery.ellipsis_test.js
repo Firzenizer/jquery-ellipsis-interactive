@@ -6,7 +6,7 @@
     test('one line ellipsis', function() {
         $('#one').ellipsis();
         var text = $('#one').text();
-        equal(text.lastIndexOf('...'), text.length - 3);
+        equal(text.lastIndexOf('…'), text.length - 3);
         equal($('#one').height(), $('#ref-height').height());
     });
 
@@ -15,7 +15,7 @@
             row: 2
         });
         var text = $('#two').text();
-        equal(text.lastIndexOf('...'), text.length - 3);
+        equal(text.lastIndexOf('…'), text.length - 3);
         equal($('#two').height(), $('#ref-height').height() * 2);
     });
 
@@ -43,7 +43,7 @@
         $('#multi p').ellipsis();
         $('#multi p').each(function() {
             var text = $(this).text();
-            equal(text.lastIndexOf('...'), text.length - 3);
+            equal(text.lastIndexOf('…'), text.length - 3);
             equal($(this).height(), $('#ref-height').height());
         });
     });
