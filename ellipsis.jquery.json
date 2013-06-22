@@ -1,22 +1,22 @@
 {
     "name": "ellipsis",
-    "title": "jQuery ellipsis",
-    "description": "Support multiple lines ellipsis",
+    "title": "jQuery ellipsis with data-bound original text",
+    "description": "Support multiple-line adjustable truncation, with data binding to support re-expanding the text.",
     "version": "1.0.8",
     "author": {
-        "name": "Kenji Abe",
-        "email": "kenji.01.star@gmail.com",
-        "url": "https://github.com/STAR-ZERO"
+        "name": "Aaron Muir Hamilton",
+        "email": "aaron@correspondwith.me",
+        "url": "https://github.com/aaronhamilton"
     },
     "dependencies": {
         "jquery": ">=1.7.0"
     },
     "licenses": [{
         "type": "MIT",
-        "url": "https://github.com/STAR-ZERO/jquery-ellipsis/blob/master/LICENSE-MIT"}
+        "url": "https://github.com/aaronhamilton/jquery-ellipsis/blob/master/LICENSE-MIT"}
     ],
-    "keywords": ["ellipsis", "show"],
-    "bugs": "https://github.com/STAR-ZERO/jquery-ellipsis/issues",
-    "homepage": "https://github.com/STAR-ZERO/jquery-ellipsis",
-    "docs": "https://github.com/STAR-ZERO/jquery-ellipsis"
+    "keywords": ["ellipsis", "show", "interactive"],
+    "bugs": "https://github.com/aaronhamilton/jquery-ellipsis/issues",
+    "homepage": "https://github.com/aaronhamilton/jquery-ellipsis",
+    "docs": "https://github.com/aaronhamilton/jquery-ellipsis"
 }
