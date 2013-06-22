@@ -10,10 +10,16 @@
         options = $.extend(defaults, options);
 
         this.each(function() {
+	    // 原典のデータバインド
+	    if (!$(this).attr('data-ellipsis')) {$(this).attr('data-ellipsis', $(this).text());}
+
             // 現在のテキストを取得
             var $this = $(this);
+	    var data_ellipsis = $(this).attr('data-ellipsis');
+
+	    $this.text(data_ellipsis);
+	    var origHeight = $this.height();
             var text = $this.text();
-            var origHeight = $this.height();
 
             // 1行分の高さを取得
             $this.text('a');
@@ -21,13 +27,13 @@
             var targetHeight = rowHeight * options.row;
 
             if (origHeight <= targetHeight) {
-                $this.text(text);
+                $this.text(data_ellipsis);
                 return;
             }
 
             // Binary search for max length
             var start = 1;
-            var end = text.length;
+            var end = data_ellipsis.length;
 
             while (start < end) {
                 var length = Math.ceil((start + end) / 2);
