@@ -2,7 +2,7 @@
 
 Originally built by [Kenji Abe (STAR-ZERO)][kenji]
 
-[kenji][https://github.com/STAR-ZERO]
+[kenji]:[https://github.com/STAR-ZERO]
 
 Support multiple lines ellipsis
 
