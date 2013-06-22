@@ -43,7 +43,7 @@
         $('#multi p').ellipsis();
         $('#multi p').each(function() {
             var text = $(this).text();
-            equal(text.lastIndexOf('…'), text.length - 3);
+            equal(text.lastIndexOf('…'), text.length - 1);
             equal($(this).height(), $('#ref-height').height());
         });
     });
