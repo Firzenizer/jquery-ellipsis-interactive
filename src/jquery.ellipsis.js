@@ -10,15 +10,15 @@
         options = $.extend(defaults, options);
 
         this.each(function() {
-	    // 原典のデータバインド
+            // 原典のデータバインド
 	    if (!$(this).attr('data-ellipsis')) {$(this).attr('data-ellipsis', $(this).text());}
 
             // 現在のテキストを取得
             var $this = $(this);
-	    var data_ellipsis = $(this).attr('data-ellipsis');
+            var data_ellipsis = $(this).attr('data-ellipsis');
 
 	    $this.text(data_ellipsis);
-	    var origHeight = $this.height();
+            var origHeight = $this.height();
             var text = $this.text();
 
             // 1行分の高さを取得
