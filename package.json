@@ -1,6 +1,6 @@
 {
-  "name": "jquery.ellipsis",
-  "version": "1.0.7",
+  "name": "jquery.ellipsis.interactive",
+  "version": "1.0.0",
   "engines": {
     "node": ">= 0.6.0"
   },

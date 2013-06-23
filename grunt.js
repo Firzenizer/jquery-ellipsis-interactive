@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: '<json:ellipsis.jquery.json>',
-    name: 'jquery.ellipsis',
+    pkg: '<json:ellipsis.interactive.jquery.json>',
+    name: 'jquery.ellipsis.interactive',
     meta: {
       banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
