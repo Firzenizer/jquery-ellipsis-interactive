@@ -33,7 +33,11 @@
             while (start < end) {
                 var length = Math.ceil((start + end) / 2);
                 $this.text(text.slice(0, length) + custom);
-                $this.height() <= targetHeight? start = length: end = length - 1;
+                if ($this.height() <= targetHeight){
+                    start = length;
+                } else {
+                    end = length - 1;
+                }
             }
 
             $this.text(text.slice(0, start) + custom);
