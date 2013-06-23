@@ -1,13 +1,8 @@
 (function($) {
-    $.fn.ellipsis = function(options) {
+    $.fn.ellipsis = function(rows, custom) {
 
         // デフォルトオプション
-        var defaults = {
-            'row' : 1, // 省略行数
-            'char' : '…' // 省略文字
-        };
-
-        options = $.extend(defaults, options);
+	custom = custom || "…";
 
         this.each(function() {
             // 原典のデータバインド
@@ -24,7 +19,7 @@
             // 1行分の高さを取得
             $this.text('a');
             var rowHeight = $this.height();
-            var targetHeight = rowHeight * options.row;
+            var targetHeight = rowHeight * (rows || 1);
 
             if (origHeight <= targetHeight) {
                 $this.text(data_ellipsis);
@@ -37,17 +32,11 @@
 
             while (start < end) {
                 var length = Math.ceil((start + end) / 2);
-
-                $this.text(text.slice(0, length) + options['char']);
-
-                if ($this.height () <= targetHeight) {
-                    start = length;
-                } else {
-                    end = length - 1;
-                }
+                $this.text(text.slice(0, length) + custom);
+                $this.height() <= targetHeight? start = length: end = length - 1;
             }
 
-            $this.text(text.slice(0, start) + options['char']);
+            $this.text(text.slice(0, start) + custom);
         });
 
         return this;

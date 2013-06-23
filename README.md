@@ -18,18 +18,13 @@ $('#target').ellipsis();
 Fit on two lines in the case of two or more lines
 
 ```
-$('#target').ellipsis({
-    row: 2
-});
+$('#target').ellipsis(2);
 ```
 
 Change ellipsis character
 
 ```
-$('#target').ellipsis({
-    row: 2,
-    char: '**'
-});
+$('#target').ellipsis(2, '**');
 ```
 
 Whenever you want to reflow the element, just call it the same way, and it'll restore its old text, if you change the text, remember to change the data-ellipsis attribute as well.

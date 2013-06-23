@@ -11,28 +11,21 @@
     });
 
     test('two line ellipsis', function() {
-        $('#two').ellipsis({
-            row: 2
-        });
+        $('#two').ellipsis(2);
         var text = $('#two').text();
         equal(text.lastIndexOf('…'), text.length - 1);
         equal($('#two').height(), $('#ref-height').height() * 2);
     });
 
     test('one line ellipsis, change char', function() {
-        $('#one-char').ellipsis({
-            char: '**'
-        });
+        $('#one-char').ellipsis(1,'**'});
         var text = $('#one-char').text();
         equal(text.lastIndexOf('**'), text.length - 2);
         equal($('#one-char').height(), $('#ref-height').height());
     });
 
     test('two line ellipsis, change char', function() {
-        $('#two-char').ellipsis({
-            row: 2,
-            char: '**'
-        });
+        $('#two-char').ellipsis(2, '**');
         var text = $('#two-char').text();
         equal(text.lastIndexOf('**'), text.length - 2);
         equal($('#two-char').height(), $('#ref-height').height() * 2);
