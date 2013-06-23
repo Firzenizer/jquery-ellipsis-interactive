@@ -2,7 +2,7 @@
     "name": "ellipsis.interactive",
     "title": "jQuery ellipsis with data-bound original text",
     "description": "Support multiple-line adjustable truncation, with data binding to support re-expanding the text.",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "author": {
         "name": "Aaron Muir Hamilton",
         "email": "aaron@correspondwith.me",
