@@ -18,7 +18,7 @@
     });
 
     test('one line ellipsis, change char', function() {
-        $('#one-char').ellipsis(1,'**'});
+        $('#one-char').ellipsis(1,'**');
         var text = $('#one-char').text();
         equal(text.lastIndexOf('**'), text.length - 2);
         equal($('#one-char').height(), $('#ref-height').height());
