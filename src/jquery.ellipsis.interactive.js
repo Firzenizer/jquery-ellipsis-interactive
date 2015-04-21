@@ -1,14 +1,16 @@
+/*
+Originally built by https://github.com/STAR-ZERO
+Forked by Tomi Ruusala https://github.com/Firzenizer/jquery-ellipsis-interactive
+*/
 (function($) {
     $.fn.ellipsis = function(rows, custom) {
 
-        // デフォルトオプション
+    rows++; // offset
 	custom = custom || "…";
 
         this.each(function() {
-            // 原典のデータバインド
             if (!$(this).attr('data-ellipsis')) {$(this).attr('data-ellipsis', $(this).text());}
 
-            // 現在のテキストを取得
             var $this = $(this);
             var data_ellipsis = $(this).attr('data-ellipsis');
 
@@ -16,7 +18,6 @@
             var origHeight = $this.height();
             var text = $this.text();
 
-            // 1行分の高さを取得
             $this.text('a');
             var rowHeight = $this.height();
             var targetHeight = rowHeight * (rows || 1);
@@ -40,7 +41,7 @@
                 }
             }
 
-            $this.text(text.slice(0, start) + custom);
+            $this.html(text.slice(0, start) + custom);
         });
 
         return this;
